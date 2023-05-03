@@ -29,8 +29,9 @@ int CifreCresc(int n){
 int main(){
     int n, sum = 0;
     while (cin >> n){
-        if (CifreCresc(CifrePare(n)))
-            sum += CifrePare(n);
+        int par = CifrePare(n);
+        if (CifreCresc(par))
+            sum += par;
     }
     cout << sum;
     return 0;
